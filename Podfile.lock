@@ -1,13 +1,14 @@
 PODS:
   - ActiveLabel (1.1.0)
-  - Alamofire (4.9.0)
+  - Alamofire (4.9.1)
   - CryptoSwift (1.1.3)
-  - DifferenceKit (1.1.3):
-    - DifferenceKit/Core (= 1.1.3)
-    - DifferenceKit/UIKitExtension (= 1.1.3)
-  - DifferenceKit/Core (1.1.3)
-  - DifferenceKit/UIKitExtension (1.1.3):
+  - DifferenceKit (1.1.4):
+    - DifferenceKit/Core (= 1.1.4)
+    - DifferenceKit/UIKitExtension (= 1.1.4)
+  - DifferenceKit/Core (1.1.4)
+  - DifferenceKit/UIKitExtension (1.1.4):
     - DifferenceKit/Core
+  - GoogleWebRTC (1.1.29400)
   - Hero (1.4.0)
   - IGListKit (3.4.0):
     - IGListKit/Default (= 3.4.0)
@@ -19,6 +20,7 @@ PODS:
     - Alamofire (~> 4.9.0)
     - CryptoSwift (~> 1.1.2)
     - DifferenceKit (~> 1.1.3)
+    - GoogleWebRTC (~> 1.1.29400)
     - Hero (~> 1.4.0)
     - IGListKit (~> 3.4.0)
     - Kingfisher (~> 5.8.3)
@@ -83,7 +85,7 @@ PODS:
 
 DEPENDENCIES:
   - IGListKit (from `https://github.com/imkit/IGListKit.git`)
-  - IMKit (from `https://github.com/imkit/imkit-ios-framework-v3.git`, branch `swift5.1`)
+  - IMKit (from `../imkit-ios-framework-v3`)
   - SwiftLinkPreview (from `https://github.com/imkit/SwiftLinkPreview.git`)
 
 SPEC REPOS:
@@ -92,6 +94,7 @@ SPEC REPOS:
     - Alamofire
     - CryptoSwift
     - DifferenceKit
+    - GoogleWebRTC
     - Hero
     - Kingfisher
     - Moya
@@ -109,8 +112,7 @@ EXTERNAL SOURCES:
   IGListKit:
     :git: https://github.com/imkit/IGListKit.git
   IMKit:
-    :branch: swift5.1
-    :git: https://github.com/imkit/imkit-ios-framework-v3.git
+    :path: "../imkit-ios-framework-v3"
   SwiftLinkPreview:
     :git: https://github.com/imkit/SwiftLinkPreview.git
 
@@ -118,21 +120,19 @@ CHECKOUT OPTIONS:
   IGListKit:
     :commit: 5c1a42c6d9c3fbc2c16831e0de75b5da776bd017
     :git: https://github.com/imkit/IGListKit.git
-  IMKit:
-    :commit: 68cbc4171326ea0c64fe48d26f501e9364dbad07
-    :git: https://github.com/imkit/imkit-ios-framework-v3.git
   SwiftLinkPreview:
     :commit: f78d6fa5f6e8f707371b546af20b114c0d83d6fc
     :git: https://github.com/imkit/SwiftLinkPreview.git
 
 SPEC CHECKSUMS:
   ActiveLabel: 5e3f4de79a1952d4604b845a0610d4776e4b82b3
-  Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   CryptoSwift: 6b6e488df0598b3e9fa49254ed1a65e8c1b1e10b
-  DifferenceKit: 5018791b6c1fc839921a3c171a0a539ace6ea60c
+  DifferenceKit: d7e8a7edd2ae706f1e1f05c8103d4cf858e04b78
+  GoogleWebRTC: cfb83bc346435a17fe06bb05f04ad826b858a7fb
   Hero: bac92350d7201a1a940003e0767c7b52ce7c99a1
   IGListKit: 7a5d788e9fb746bcd402baa8e8b24bc3bd2a5a07
-  IMKit: ae30927513c55f640dcbe73a0caedf05b1603f5b
+  IMKit: 25d4d52cc2f88371d1d685dce9b0adc37fc69d13
   Kingfisher: b7e4cb65ff24c264bd2a1284b75b974d907afd94
   Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
   PromiseKit: e4863d06976e7dee5e41c04fc7371c16b3600292
@@ -146,6 +146,6 @@ SPEC CHECKSUMS:
   SwiftLinkPreview: 703ea0cc24300a0a9011e3b677d98df050b85036
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: 5e3f6af964ca95e31df3f13db631de3039758abc
+PODFILE CHECKSUM: bc575573956e02c962104128ddbb0880d159704c
 
 COCOAPODS: 1.8.4

@@ -54,5 +54,7 @@
 	<string>允許儲存圖片至相簿</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>允許存取相簿</string>
+	<key>UIUserInterfaceStyle</key>
+	<string>Light</string>
 </dict>
 </plist>

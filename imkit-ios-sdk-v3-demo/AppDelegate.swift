@@ -21,7 +21,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if let url = URL(string: "https://auth.fangho.com") {
             IMKit.authServerURL = url
         }
-        IMKit.token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6InNzcyIsIm5pY2tuYW1lIjoiU1NTIiwiZXhwIjoxNjEwNzIwMTI1LCJpYXQiOjE1NzkxODQxMjV9.idAiHLADDdLWguQAmsC-80tu89MqUzDA4DY-y6dWUSQ"
         return true
     }
 

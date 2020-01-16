@@ -17,7 +17,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        IMKit.configure(apiKey: "", clientKey: "fangho_imkit_0412_2018_001_clientkey", chatServerURL: URL(string: "https://chat.fangho.com")!, authServerURL: URL(string: "https://auth.fangho.com")!, bucket: "chatserver-upload")
+        IMKit.configure(clientKey: "fangho_imkit_0412_2018_001_clientkey", chatServerURL: URL(string: "https://imkit.knowledge-pole.com")!)
+        if let url = URL(string: "https://auth.fangho.com") {
+            IMKit.authServerURL = url
+        }
+        IMKit.token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6InNzcyIsIm5pY2tuYW1lIjoiU1NTIiwiZXhwIjoxNjEwNzIwMTI1LCJpYXQiOjE1NzkxODQxMjV9.idAiHLADDdLWguQAmsC-80tu89MqUzDA4DY-y6dWUSQ"
         return true
     }
 

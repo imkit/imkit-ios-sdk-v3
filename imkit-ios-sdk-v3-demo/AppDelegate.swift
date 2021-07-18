@@ -17,8 +17,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
-
-        
         // remove back-button-title of navi-bar
         // ref: https://stackoverflow.com/a/29912585
         let BarButtonItemAppearance = UIBarButtonItem.appearance()
@@ -29,11 +27,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         BarButtonItemAppearance.setTitleTextAttributes(attributes, for: .normal)
         BarButtonItemAppearance.setTitleTextAttributes(attributes, for: .highlighted)
         
-        IMKit.authServerURL = URL(string: "https://chat.fangho.com/auth")!
+        IMKit.authServerURL = URL(string: "https://yc.imkit.dev/auth")!
         IMKit.configure(
-            clientKey: "fangho_imkit_0412_2018_001_clientkey",
-            chatServerURL: URL(string: "https://chat.fangho.com")!
+            clientKey: "yungching_imkit_2021_1d0e76c57033_clientkey",
+            chatServerURL: URL(string: "https://yc.imkit.dev")!
         )
+        
         return true
     }
 
